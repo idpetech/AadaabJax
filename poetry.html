@@ -1,57 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Poetry & Videos — آدابJAX</title>
+  <title>Poetry — آدابJAX</title>
+  <meta name="description" content="Explore Urdu and Punjabi poetry - ghazals, couplets, and contemporary verse">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <h1 class="brand">آدابJAX</h1>
+      <p class="tagline">Celebrating Urdu & Punjabi literary culture in Jacksonville</p>
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="poetry.html">Poetry & Videos</a>
-        <a href="gallery.html">Culture Gallery</a>
+        <a href="poetry.html">Poetry</a>
+        <a href="books.html">Books</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Poetry & Videos</h2>
-    <p>All your poetry clips, narration videos, and short-form reels.</p>
+<main class="container">
+  <h2>Poetry</h2>
 
-    <section class="video-list">
-      <!-- Replace these with your actual embeds -->
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        <h4>دل کی غزلیں</h4>
-        <p>سیتار کا پس منظر - narrated in Urdu</p>
-      </div>
+  <!-- Tabs for Urdu / Punjabi -->
+  <div class="tabs">
+    <button class="tablink active" onclick="openTab(event,'urdu')">Urdu / اردو</button>
+    <button class="tablink" onclick="openTab(event,'punjabi')">Punjabi (شاہ مکھی)</button>
+  </div>
 
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
-        <h4>سلیس جملے</h4>
-        <p>Minimalist couplet with city visuals</p>
-      </div>
-    </section>
+  <!-- Urdu Poems -->
+  <div id="urdu" class="tabcontent" style="display:block" dir="rtl">
+    <h3>Urdu Poems — اردو</h3>
 
-    <section class="poems">
-      <h3>Featured Poems (text + audio)</h3>
-      <article class="poem">
-        <h4>دل کی غزلیں</h4>
-        <pre class="urdu">زباں کو زمیں میں وہ گھر چاہیے
+    <article class="poem">
+      <h4>دل کی غزلیں</h4>
+      <pre class="urdu">زباں کو زمیں میں وہ گھر چاہیے
 ادب کو نویدِ سحر چاہیے</pre>
-        <audio controls src="assets/sample-audio.mp3">Your browser does not support audio.</audio>
-      </article>
-    </section>
+    </article>
 
-  </main>
+    <article class="poem">
+      <h4>سلیس جملے</h4>
+      <pre class="urdu">کو بہ کو، نظر کی طرح، آسان اور مختصر جملے</pre>
+    </article>
+  </div>
+
+  <!-- Punjabi Poems -->
+  <div id="punjabi" class="tabcontent" dir="rtl">
+    <h3>Punjabi (Shahmukhi) — پنجابی</h3>
+
+    <article class="poem">
+      <h4>کس گل دا رونا</h4>
+      <pre class="urdu">کیڑی جِندڑی یار گُذاری اے
+کیڑی راه حشر توں چاڑی اے کیڑی ڈاڈھی رات اندھیاری اے
+کیڑی تھاں ، اپنی قبر توں گاڑھی اے
+کیڑا یار سجن تے بیلی اے
+جِنے سینے خنجر گاڑھی اے اے اِنج دا اِنج ہی ھونا سی اے فصل توں آپ ہی چاڑی اے</pre>
+    </article>
+
+    <article class="poem">
+      <h4>تیری یاد</h4>
+      <pre class="urdu">جَد یاد تیری مینو آندی اے
+دل میرے نوں کُرلاندی اے
+اکھ حنجواں نال بھر جاندی اے
+نِت ساون رنگ برساندی اے
+
+تیری یاد میرا سرمایا اے
+جنے ہر سوُ چانن پایا اے
+ہنیری راہواں نُوں چمکایا اے
+منزل دی راه تے پایا اے
+
+حسیب شاماں دا ویلا اے
+جِندڑی دا اوہی جھمبیلا اے
+پلے اج وی نہ دھیلا اے
+یاداں دا فیر وی میلا اے</pre>
+    </article>
+
+  </div>
+</main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; AadaabJax — آدابJAX</p>
+      <p>&copy; 2024 AadaabJax — آدابJAX</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> ·
+        <a href="poetry.html">Poetry</a> ·
+        <a href="books.html">Books</a> ·
+        <a href="events.html">Events</a> ·
+        <a href="gallery.html">Gallery</a> ·
+        <a href="about.html">About</a>
+      </nav>
     </div>
   </footer>
 
